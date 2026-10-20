@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VEM Fornada Certa</title>
+<meta name="description" content="Simule em 3 minutos quanto sua padaria economiza trocando a assadeira de alumínio pela de silicone Silpró. App da VEM, por LeanIA Digital.">
+<meta name="theme-color" content="#FFFCF4">
+<link rel="icon" href="data:image/webp;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: LeanIA Mini Apps v1 · white-label VEM — cabeçalho compacto, coluna única de até 640px, barra fixa no rodapé (5 abas), uma etapa por vez */
+:root{
+  color-scheme:light;
+  --bg:#FAF4E6; --surface:#FFFCF4; --sunk:#F1E8D3; --line:#E2D5B8;
+  --ink:#121212; --muted:#4D483F;
+  --accent:#B42318; --accent-soft:#FBE4DF; --on-accent:#FFFFFF;
+  --accent2:#8A4B0A; --accent2-soft:#F5E4CC;
+  --good:#1E6B4C; --good-soft:#DCEFE3; --warn:#8A5600; --warn-soft:#F8EACB; --bad:#8E1B4D; --bad-soft:#F5DCE6;
+  --wa:#1F8F4E;
+  --il-bench:#EFE6D3; --il-bench2:#DCCDAE; --il-flour:#FFFDF7; --il-wood:#8A5A2B;
+  --il-mat:#D63A2C; --il-mat2:#A9241B; --il-rim:#E8574A; --il-mat-hole:#7E140F;
+  --il-dough-hi:#FFF9EE; --il-dough:#F3E4C8; --il-dough2:#D9BF93;
+  --il-crust1:#F6CD86; --il-crust2:#C98236; --il-crust3:#7E4516; --il-ear:#FBE3B0;
+  --il-oven:#1E1712; --il-oven2:#3A2A1E; --il-glow:#F7922F; --il-glow-hi:#FFE2A8;
+  --il-steel:#8C939A; --il-steel-hi:#D9DDE1; --il-sponge:#E8B83A; --il-sponge-hi:#F7D774; --il-scrub:#2F7D52;
+  --il-shine:#FFFFFF; --il-shadow:#3A2A18;
+  --display:"Gloock", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+:root[data-vem-theme="dark"]{
+  --bg:#0D0C0A; --surface:#171511; --sunk:#221F19; --line:#38322A;
+  --ink:#F7F3EA; --muted:#C4BBA8;
+  --accent:#FF7A66; --accent-soft:#3A1712; --on-accent:#1A0806;
+  --accent2:#E8A95C; --accent2-soft:#33240F;
+  --good:#63C99A; --good-soft:#18362A; --warn:#EBB95C; --warn-soft:#382C14; --bad:#F38BB4; --bad-soft:#3B1A27;
+  --il-bench:#3A3328; --il-bench2:#2A251D; --il-flour:#CFC6B4;
+  --il-shadow:#000000;
+  color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-tap-highlight-color:transparent}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+button{font:inherit;color:inherit}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+svg{flex:0 0 auto}
+.num{font-variant-numeric:tabular-nums}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:var(--surface);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand img{width:42px;height:42px;display:block;flex:0 0 auto}
+.logo{display:flex;flex-direction:column;gap:2px;min-width:0}
+.logo-row{display:flex;align-items:center;gap:8px;min-width:0}
+.logo-word{font-family:var(--display);font-size:24px;line-height:1;color:var(--accent);white-space:nowrap}
+.logo-word span{color:var(--accent2)}
+.vtag{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent2);border:1px solid var(--accent2);border-radius:999px;padding:3px 8px;white-space:nowrap}
+@media (max-width:400px){.vtag{display:none}}
+.slogan{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.slogan b{color:var(--ink);font-weight:600}
+.icon-btn{width:44px;height:44px;flex:0 0 auto;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:var(--bg);color:var(--accent);cursor:pointer}
+
+main .wrap{padding-block:18px calc(100px + env(safe-area-inset-bottom,0px))}
+section.screen{display:flex;flex-direction:column;gap:16px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent2);display:flex;align-items:center;gap:8px}
+h1,h2{font-family:var(--display);font-weight:400;color:var(--accent);margin:0;text-wrap:balance}
+h1{font-size:clamp(30px,8vw,40px);line-height:1.08}
+h1 em,h2 em{font-style:normal;color:var(--accent2)}
+h2{font-size:clamp(24px,6.5vw,30px);line-height:1.15}
+.lead{margin:0;max-width:58ch}
+.lead b{color:var(--accent)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card-h{display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px}
+.card-h svg{color:var(--accent)}
+.hint{font-size:12px;color:var(--muted);margin:0}
+.ex{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--warn);background:var(--warn-soft);border-radius:999px;padding:3px 10px;align-self:flex-start}
+.btn{min-height:48px;padding:0 18px;border-radius:14px;border:1px solid var(--line);background:var(--surface);font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:10px;color:var(--ink);text-decoration:none}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.block{width:100%;min-height:52px;font-size:16px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+label.f{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted);min-width:0}
+input[type=number],input[type=date]{font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%;min-height:44px;font-variant-numeric:tabular-nums}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.tile{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:12px;background:var(--sunk);min-width:0}
+.tile span{font-size:11px;color:var(--muted)}
+.tile b{font-size:16px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.tile.a{background:var(--accent-soft)} .tile.a b{color:var(--accent)}
+.tile.o{background:var(--accent2-soft)} .tile.o b{color:var(--accent2)}
+.tile.g{background:var(--good-soft)} .tile.g b{color:var(--good)}
+
+.hero-art{border-radius:20px;background:var(--accent-soft);overflow:hidden}
+.hero-art svg{display:block;width:100%;height:auto}
+.il-defs{position:absolute;width:0;height:0;overflow:hidden}
+.flow-swipe{display:none;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
+.flow-dots{display:flex;gap:6px;margin-left:auto}
+.flow-dots i{width:7px;height:7px;border-radius:50%;background:var(--line)}
+.flow-dots i.on{background:var(--accent2)}
+.intro{display:flex;flex-direction:column;gap:10px}
+.flow{margin:0;display:flex;flex-direction:column;gap:12px;padding:16px;border-radius:20px;background:var(--surface);border:1px solid var(--line)}
+.flow-h b{font-size:17px}
+.flow-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.flow-steps li{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;min-width:0}
+.fs-fig{position:relative;width:100%;display:block}
+.flow-steps li:not(:last-child) .fs-fig::after{content:"›";position:absolute;z-index:1;top:50%;right:-14px;transform:translateY(-50%);width:20px;height:20px;border-radius:50%;background:var(--surface);border:1px solid var(--line);color:var(--accent2);font-weight:700;font-size:16px;line-height:17px;text-align:center}
+.fs-num{white-space:nowrap;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent2)}
+.fs-art{display:block;width:100%;max-width:100%;aspect-ratio:5/4;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--sunk)}
+.fs-art svg{display:block;width:100%;height:100%}
+.flow-steps b{font-size:13px;line-height:1.3;text-wrap:balance}
+.gain{font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--good-soft);color:var(--good);margin-top:auto}
+@media (max-width:520px){.flow-steps{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:66%;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 4px 6px;margin:0 -4px;scrollbar-width:none}.flow-steps::-webkit-scrollbar{display:none}.flow-steps li{scroll-snap-align:start}.flow-swipe{display:flex}}
+.teaser{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:14px 16px;border-radius:16px;background:var(--good-soft)}
+.teaser-base{margin:6px 0 0;font-size:12px;line-height:1.4;color:var(--muted);max-width:46ch}
+.teaser{align-items:start}
+.teaser small{display:block;font-size:12px;color:var(--muted)}
+.teaser b{font-size:26px;line-height:1.1;color:var(--good);font-variant-numeric:tabular-nums}
+.steps{display:flex;flex-direction:column;gap:10px}
+.step-btn{display:grid;grid-template-columns:44px 1fr 18px;gap:12px;align-items:center;text-align:left;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--surface);cursor:pointer;width:100%}
+.ico{width:44px;height:44px;border-radius:12px;display:grid;place-items:center}
+.ico.a{background:var(--accent-soft);color:var(--accent)}
+.ico.o{background:var(--accent2-soft);color:var(--accent2)}
+.step-btn b{display:block}
+.step-btn small{font-size:13px;color:var(--muted)}
+.step-btn>span:last-child{color:var(--muted)}
+
+.seg{display:flex;gap:6px;padding:4px;border-radius:12px;background:var(--sunk)}
+.seg button{flex:1;min-height:44px;border:0;border-radius:9px;font-size:14px;font-weight:600;cursor:pointer;background:transparent;color:var(--muted);padding:0 6px}
+.seg button[aria-pressed=true]{background:var(--accent);color:var(--on-accent)}
+.q{display:flex;flex-direction:column;gap:8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{min-height:44px;padding:0 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);font-size:14px;font-weight:600;cursor:pointer}
+.chip[aria-pressed=true]{border:2px solid var(--accent);background:var(--accent-soft);color:var(--accent)}
+
+.total{display:flex;flex-direction:column;gap:4px;padding:18px;border-radius:16px;background:var(--accent);color:var(--on-accent)}
+.total span{font-size:12px;font-weight:600;opacity:.9}
+.total b{font-size:34px;line-height:1.1;font-variant-numeric:tabular-nums}
+.total small{font-size:13px;opacity:.9}
+.cmp{display:flex;flex-direction:column;gap:12px}
+.peruse{display:flex;flex-direction:column;gap:14px}
+.pu{display:flex;flex-direction:column;gap:6px}
+.pu-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.pu-h b{font-size:15px}
+.pu-h strong{font-size:20px;font-variant-numeric:tabular-nums}
+.pu.al strong{color:var(--accent2)} .pu.si strong{color:var(--good)}
+.stack{display:flex;height:22px;border-radius:8px;overflow:hidden;background:var(--sunk)}
+.stack i{display:block;height:100%}
+.stack i+i{border-left:2px solid var(--surface)}
+.pu-l{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.pu-l span{display:inline-flex;align-items:center;gap:6px}
+.pu-l u{width:10px;height:10px;border-radius:3px;display:inline-block}
+.pu-diff{font-size:14px;padding:10px 12px;border-radius:10px;background:var(--good-soft)}
+.pu-diff b{color:var(--good)}
+.memo{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;counter-reset:m}
+.memo>li{counter-increment:m;display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start}
+.memo>li::before{content:counter(m);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:13px}
+.memo b.t{display:block;font-size:14px}
+.memo .calc{display:flex;flex-direction:column;gap:3px;margin-top:4px;padding:8px 10px;border-radius:10px;background:var(--sunk);font-size:13px;font-variant-numeric:tabular-nums}
+.memo .calc div{display:flex;justify-content:space-between;gap:10px}
+.memo .calc div span:first-child{color:var(--muted);min-width:0}
+.memo .calc div.sum{border-top:1px solid var(--line);padding-top:4px;font-weight:700}
+.memo .calc div span:last-child{white-space:nowrap}
+.memo small{display:block;font-size:12px;color:var(--muted);margin-top:4px}
+.tbl-wrap{overflow-x:auto}
+.sens{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+.sens th{white-space:nowrap;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);text-align:right;padding:6px 4px;border-bottom:1px solid var(--line)}
+.sens th:first-child,.sens td:first-child{text-align:left}
+.sens td{white-space:nowrap;padding:9px 4px;text-align:right;border-bottom:1px solid var(--line)}
+.sens tr.cur td{background:var(--accent-soft);font-weight:700}
+.sens td.neg{color:var(--bad)} .sens td.pos{color:var(--good)}
+.be{font-size:14px;padding:10px 12px;border-radius:10px;background:var(--accent2-soft)}
+.be b{color:var(--accent2)}
+.src{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:13px}
+.src li{display:flex;flex-direction:column;gap:2px}
+.src a{color:var(--accent);font-weight:700}
+.src span{color:var(--muted)}
+.prem{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:13px}
+.prem li{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.prem li span:first-child{min-width:0}
+.tag{flex:0 0 auto;font-size:11px;font-weight:700;border-radius:999px;padding:2px 8px;white-space:nowrap}
+.tag.exm{background:var(--warn-soft);color:var(--warn)} .tag.ref{background:var(--accent-soft);color:var(--accent)} .tag.you{background:var(--good-soft);color:var(--good)}
+.cmp-sep{font-size:12px;font-weight:700;color:var(--good);border-top:1px dashed var(--line);padding-top:10px}
+.cmp-row{display:flex;flex-direction:column;gap:4px}
+.cmp-row div{display:flex;justify-content:space-between;gap:8px;font-size:14px}
+.cmp-row b{font-variant-numeric:tabular-nums}
+.track{height:12px;border-radius:999px;background:var(--sunk);overflow:hidden;display:block}
+.track i{display:block;height:100%;border-radius:999px;background:var(--accent);transition:width .35s}
+.track i.o{background:var(--accent2)}
+.track i.g{background:var(--good)}
+
+.mat{border-radius:14px;background:var(--sunk);padding:10px;overflow-x:auto}
+.mat svg{display:block;width:100%;height:auto;min-width:280px}
+
+.life{position:relative;height:14px;border-radius:999px;background:var(--sunk);margin-top:22px}
+.life i{position:absolute;left:0;top:0;bottom:0;border-radius:999px;background:var(--good)}
+.life u{position:absolute;top:-5px;bottom:-5px;width:3px;border-radius:2px;background:var(--accent2)}
+.life em{position:absolute;bottom:20px;transform:translateX(-50%);font-style:normal;font-size:11px;font-weight:700;color:var(--accent2);white-space:nowrap}
+.life-legend{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+
+.videos{display:flex;flex-direction:column;gap:12px}
+.vcard{display:flex;flex-direction:column;gap:8px}
+.vframe{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:16/9;max-width:100%;background:var(--sunk);display:grid;place-items:center;text-align:center;padding:16px}
+.vframe .soon{display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--muted);font-size:13px}
+.vframe .soon span{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--surface);color:var(--accent)}
+.vframe .dur{position:absolute;right:12px;bottom:12px;font-size:12px;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--surface);color:var(--ink)}
+.vframe .cc{position:absolute;left:12px;bottom:12px;font-size:11px;font-weight:700;padding:2px 6px;border-radius:6px;border:1px solid var(--muted);color:var(--muted)}
+.vcard b{font-size:15px}
+.ticks{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;list-style:none}
+.ticks li{display:grid;grid-template-columns:18px 1fr;gap:8px;font-size:14px}
+.ticks svg{color:var(--good);margin-top:3px}
+.ticks.no svg{color:var(--bad)}
+
+.pilot{display:flex;flex-direction:column;gap:10px;padding:16px;border-radius:16px;background:var(--accent2-soft)}
+.pilot .ph{display:flex;align-items:center;gap:10px}
+.pilot .ph span{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--accent2);color:var(--surface)}
+.pilot .ph b{display:block;font-size:17px}
+.pilot .ph small{font-size:12px;color:var(--muted)}
+.pilot ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:14px}
+
+.plan{border:2px solid var(--accent);border-radius:18px;padding:18px;background:var(--surface);display:flex;flex-direction:column;gap:12px}
+.plan .ttl{font-family:var(--display);font-size:24px;line-height:1.15;color:var(--accent)}
+.plan dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0}
+.plan dt{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.plan dd{margin:2px 0 0;font-weight:700;font-variant-numeric:tabular-nums}
+.plan .cta{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-direction:column;gap:10px}
+.plan .cta p{margin:0;font-size:14px}
+.contact{font-weight:700;color:var(--accent);user-select:all}
+
+.privacy{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;padding:14px;border-radius:14px;background:var(--good-soft);color:var(--ink)}
+.privacy .pi{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--good);color:var(--surface)}
+.privacy b{display:block;font-size:14px;color:var(--good)}
+.privacy p{margin:2px 0 0;font-size:13px}
+.privacy.sm{grid-template-columns:18px 1fr;gap:8px;padding:10px 12px;border-radius:10px}
+.privacy.sm svg{color:var(--good);margin-top:2px}
+
+.wa{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 18px;border-radius:14px;background:var(--wa);color:#FFFFFF;font-weight:700;text-decoration:none}
+.wa:hover{filter:brightness(1.08)}
+.wa-fab{position:fixed;z-index:7;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(84px + env(safe-area-inset-bottom,0px));width:56px;height:56px;padding:0;border-radius:50%;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.wa-fab svg{width:28px;height:28px}
+.credit{font-size:12px;color:var(--muted);text-align:center;margin:8px 0 0}
+
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.tabbar .wrap{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;padding-block:6px}
+.tabbar button{min-height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:0;background:transparent;cursor:pointer;font-size:11px;font-weight:500;color:var(--muted);border-radius:12px}
+.tabbar button[aria-current=page]{color:var(--accent);font-weight:700;background:var(--accent-soft)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="VEM">
+<meta property="og:title" content="VEM Fornada Certa · Quanto sua padaria economiza com a assadeira de silicone">
+<meta property="og:description" content="Simule em 3 minutos a economia de trocar a assadeira de alumínio pela Silpró. Sem cadastro.">
+<meta property="og:url" content="https://mvcaraujo.github.io/fornada-certa/">
+<meta property="og:image" content="https://mvcaraujo.github.io/fornada-certa/og.jpg">
+<meta property="og:image:secure_url" content="https://mvcaraujo.github.io/fornada-certa/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="VEM Fornada Certa: pão francês sem untar, sem pão grudado. Simulação de R$ 11 mil de economia por ano.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Fornada Certa">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<svg class="il-defs" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-bench" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--il-bench)"/><stop offset="1" style="stop-color:var(--il-bench2)"/></linearGradient>
+    <linearGradient id="g-mat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--il-mat)"/><stop offset="1" style="stop-color:var(--il-mat2)"/></linearGradient>
+    <linearGradient id="g-rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--il-rim)"/><stop offset="1" style="stop-color:var(--il-mat2)"/></linearGradient>
+    <radialGradient id="g-dough" cx=".38" cy=".3" r=".8"><stop offset="0" style="stop-color:var(--il-dough-hi)"/><stop offset=".55" style="stop-color:var(--il-dough)"/><stop offset="1" style="stop-color:var(--il-dough2)"/></radialGradient>
+    <radialGradient id="g-crust" cx=".42" cy=".28" r=".85"><stop offset="0" style="stop-color:var(--il-crust1)"/><stop offset=".5" style="stop-color:var(--il-crust2)"/><stop offset="1" style="stop-color:var(--il-crust3)"/></radialGradient>
+    <radialGradient id="g-shadow" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:var(--il-shadow);stop-opacity:.55"/><stop offset="1" style="stop-color:var(--il-shadow);stop-opacity:0"/></radialGradient>
+    <radialGradient id="g-glow" cx=".5" cy="0" r="1"><stop offset="0" style="stop-color:var(--il-glow);stop-opacity:.75"/><stop offset=".55" style="stop-color:var(--il-glow);stop-opacity:.18"/><stop offset="1" style="stop-color:var(--il-glow);stop-opacity:0"/></radialGradient>
+    <linearGradient id="g-oven" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--il-oven2)"/><stop offset="1" style="stop-color:var(--il-oven)"/></linearGradient>
+    <linearGradient id="g-steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--il-steel-hi)"/><stop offset=".5" style="stop-color:var(--il-steel)"/><stop offset="1" style="stop-color:var(--il-steel-hi)"/></linearGradient>
+    <linearGradient id="g-sponge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--il-sponge-hi)"/><stop offset="1" style="stop-color:var(--il-sponge)"/></linearGradient>
+    <linearGradient id="g-shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" style="stop-color:var(--il-shine);stop-opacity:0"/><stop offset=".5" style="stop-color:var(--il-shine);stop-opacity:.55"/><stop offset="1" style="stop-color:var(--il-shine);stop-opacity:0"/></linearGradient>
+    <linearGradient id="g-canal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--il-mat-hole)"/><stop offset=".22" style="stop-color:var(--il-mat2)"/><stop offset=".6" style="stop-color:var(--il-mat)"/><stop offset=".92" style="stop-color:var(--il-rim)"/><stop offset="1" style="stop-color:var(--il-mat2)"/></linearGradient>
+    <pattern id="p-mesh" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="2.5" cy="2.5" r=".7" style="fill:var(--il-mat-hole)"/></pattern>
+    <symbol id="sy-dough" viewBox="-34 -18 68 36" overflow="visible">
+      <ellipse cx="2" cy="11" rx="31" ry="7" style="fill:url(#g-shadow)"/>
+      <path d="M-28 3C-28-8-15-12 0-12S28-8 28 3 15 11 0 11-28 13-28 3Z" style="fill:url(#g-dough)"/>
+      <path d="M-17-4C-8-9 6-9 15-5" style="fill:none;stroke:var(--il-dough-hi);stroke-width:2;stroke-linecap:round;opacity:.9"/>
+    </symbol>
+    <symbol id="sy-bread" viewBox="-34 -18 68 36" overflow="visible">
+      <ellipse cx="2" cy="12" rx="32" ry="7" style="fill:url(#g-shadow)"/>
+      <path d="M-30 3C-30-10-16-14 0-14S30-10 30 3 16 12 0 12-30 15-30 3Z" style="fill:url(#g-crust)"/>
+      <path d="M-18-3C-8-10 7-10 18-4" style="fill:none;stroke:var(--il-crust3);stroke-width:3.4;stroke-linecap:round;opacity:.55"/>
+      <path d="M-17-4.5C-8-10.5 7-10.5 17-5.5" style="fill:none;stroke:var(--il-ear);stroke-width:1.8;stroke-linecap:round"/>
+      <path d="M-22 6C-10 10 10 10 22 6" style="fill:none;stroke:var(--il-crust3);stroke-width:1;opacity:.35"/>
+    </symbol>
+  </defs>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <img src="data:image/webp;base64,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" alt="VEM">
+      <div class="logo">
+        <div class="logo-row"><span class="logo-word">Fornada <span>Certa</span></span><span class="vtag">Panificação</span></div>
+        <span class="slogan"><b>Assadeiras Silpró</b> · VEM</span>
+      </div>
+    </div>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Alternar tema claro ou escuro"></button>
+  </div>
+</header>
+
+<main><div class="wrap">
+
+<section class="screen" id="s-home">
+  <div class="intro">
+    <div class="eyebrow">VEM · Utensílios profissionais</div>
+    <h1>Pão francês sem untar, <em>sem pão grudado</em>.</h1>
+    <p class="lead">Utensílios profissionais <b>VEM</b>, feitos para a rotina pesada da padaria.</p>
+    <p class="lead">Em 3 minutos, veja quanto você economiza trocando a assadeira de alumínio pela assadeira de silicone.</p>
+  </div>
+  <figure class="flow" aria-labelledby="flowCap">
+    <div class="flow-h"><b id="flowCap">Onde você economiza, do preparo à limpeza</b></div>
+    <ol class="flow-steps">
+      <li>
+        <span class="fs-num">Preparo</span>
+        <span class="fs-fig"><span class="fs-art"><svg viewBox="0 0 200 160" role="img" aria-label="Pães crus sobre a assadeira de silicone vermelha, na bancada com farinha, sem papel manteiga">
+          <rect width="200" height="160" style="fill:url(#g-bench)"/>
+          <g style="fill:var(--il-flour)"><circle cx="22" cy="20" r="1.4"/><circle cx="31" cy="27" r=".9"/><circle cx="17" cy="33" r="1.1"/><circle cx="168" cy="146" r="1.2"/><circle cx="182" cy="139" r=".8"/><circle cx="12" cy="150" r="1"/><circle cx="44" cy="15" r=".8"/></g>
+          <ellipse cx="34" cy="26" rx="24" ry="10" style="fill:var(--il-flour);opacity:.5"/>
+          <g transform="translate(150 16) rotate(14)"><rect x="0" y="0" width="34" height="22" rx="2" style="fill:url(#g-steel)"/><rect x="0" y="0" width="34" height="7" rx="2" style="fill:var(--il-wood)"/></g>
+          <ellipse cx="100" cy="142" rx="96" ry="8" style="fill:url(#g-shadow)"/>
+          <path d="M26 52H174L192 138H8Z" style="fill:url(#g-rim)"/>
+          <path d="M33 58H167L182 132H18Z" style="fill:url(#g-mat)"/>
+          <path d="M33 58H167L182 132H18Z" style="fill:url(#p-mesh);opacity:.35"/>
+          <path d="M36 60H164" style="stroke:var(--il-rim);stroke-width:1.2;opacity:.8"/>
+          <use href="#sy-dough" x="18" y="62" width="60" height="32"/><use href="#sy-dough" x="70" y="62" width="60" height="32"/><use href="#sy-dough" x="122" y="62" width="60" height="32"/>
+          <use href="#sy-dough" x="12" y="94" width="64" height="34"/><use href="#sy-dough" x="68" y="94" width="64" height="34"/><use href="#sy-dough" x="124" y="94" width="64" height="34"/>
+        </svg></span></span>
+        <b>Sem untar nem desmoldante</b>
+        <span class="gain">Economia</span>
+      </li>
+      <li>
+        <span class="fs-num">Fornada</span>
+        <span class="fs-fig"><span class="fs-art"><svg viewBox="0 0 200 160" role="img" aria-label="Pães dourados assando sobre a assadeira de silicone, dentro do forno aquecido">
+          <rect width="200" height="160" style="fill:url(#g-oven)"/>
+          <rect width="200" height="160" style="fill:url(#g-glow)"/>
+          <g style="fill:none;stroke:var(--il-glow);stroke-width:3;stroke-linecap:round"><path d="M18 12H182"/><path d="M18 22H182" style="opacity:.6"/></g>
+          <g style="fill:none;stroke:var(--il-glow-hi);stroke-width:1;stroke-linecap:round"><path d="M18 12H182"/></g>
+          <g style="fill:none;stroke:var(--il-shine);stroke-width:1.3;stroke-linecap:round;opacity:.28"><path d="M58 50c-5-6 5-10 0-16"/><path d="M100 48c-5-6 5-10 0-16"/><path d="M142 50c-5-6 5-10 0-16"/></g>
+          <g style="stroke:url(#g-steel);stroke-width:2.2"><path d="M4 140H196"/><path d="M14 148H186" style="opacity:.6"/></g>
+          <ellipse cx="100" cy="138" rx="94" ry="6" style="fill:url(#g-shadow)"/>
+          <path d="M26 60H174L192 136H8Z" style="fill:url(#g-rim)"/>
+          <path d="M33 66H167L182 130H18Z" style="fill:url(#g-mat)"/>
+          <path d="M33 66H167L182 130H18Z" style="fill:url(#p-mesh);opacity:.3"/>
+          <use href="#sy-bread" x="16" y="66" width="62" height="32"/><use href="#sy-bread" x="69" y="66" width="62" height="32"/><use href="#sy-bread" x="122" y="66" width="62" height="32"/>
+          <use href="#sy-bread" x="10" y="96" width="66" height="35"/><use href="#sy-bread" x="67" y="96" width="66" height="35"/><use href="#sy-bread" x="124" y="96" width="66" height="35"/>
+          <rect width="200" height="160" style="fill:none;stroke:url(#g-steel);stroke-width:8"/>
+        </svg></span></span>
+        <b>Resiste ao calor, fornada após fornada</b>
+        <span class="gain">Qualidade</span>
+      </li>
+      <li>
+        <span class="fs-num">Pós-fornada</span>
+        <span class="fs-fig"><span class="fs-art"><svg viewBox="0 0 200 160" role="img" aria-label="Pão saindo inteiro da assadeira de silicone limpa, com esponja macia ao lado">
+          <rect width="200" height="160" style="fill:url(#g-bench)"/>
+          <ellipse cx="100" cy="142" rx="96" ry="8" style="fill:url(#g-shadow)"/>
+          <path d="M26 52H174L192 138H8Z" style="fill:url(#g-rim)"/>
+          <path d="M33 58H167L182 132H18Z" style="fill:url(#g-mat)"/>
+          <path d="M33 58H167L182 132H18Z" style="fill:url(#p-mesh);opacity:.35"/>
+          <path d="M40 124L92 64" style="stroke:url(#g-shine);stroke-width:14;stroke-linecap:round"/>
+          <path d="M120 126L156 82" style="stroke:url(#g-shine);stroke-width:8;stroke-linecap:round"/>
+          <g style="fill:var(--il-shine);opacity:.75"><ellipse cx="60" cy="112" rx="2.2" ry="1.6"/><ellipse cx="146" cy="70" rx="1.8" ry="1.3"/><ellipse cx="128" cy="118" rx="2.4" ry="1.7"/><ellipse cx="76" cy="76" rx="1.5" ry="1.1"/></g>
+          <use href="#sy-bread" x="16" y="62" width="62" height="32"/>
+          <use href="#sy-bread" x="104" y="88" width="62" height="33"/>
+          <ellipse cx="100" cy="102" rx="30" ry="7" style="fill:url(#g-shadow);opacity:.8"/>
+          <g transform="translate(100 66) rotate(-8)"><use href="#sy-bread" x="-36" y="-19" width="72" height="38"/></g>
+          <g style="fill:none;stroke:var(--il-shine);stroke-width:1.6;stroke-linecap:round;opacity:.9"><path d="M100 92v-10"/><path d="M95 86l5-5 5 5"/></g>
+          <g transform="translate(172 145) rotate(-8)"><rect x="-22" y="-9" width="44" height="18" rx="4" style="fill:url(#g-sponge)"/><rect x="-22" y="-9" width="44" height="6" rx="3" style="fill:var(--il-scrub)"/><g style="fill:var(--il-shine);opacity:.85"><circle cx="-14" cy="-12" r="3"/><circle cx="-8" cy="-14" r="2"/><circle cx="-3" cy="-11" r="2.6"/></g></g>
+        </svg></span></span>
+        <b>Desenforma fácil e limpa rápido</b>
+        <span class="gain">Eficiência</span>
+      </li>
+    </ol>
+    <div class="flow-swipe" aria-hidden="true">Deslize para ver as 3 etapas ›<span class="flow-dots"><i class="on"></i><i></i><i></i></span></div>
+    <figcaption class="hint">Ilustração dos ganhos esperados com o uso correto. No seu forno, você confirma com uma amostra.</figcaption>
+  </figure>
+
+  <div class="teaser" id="teaser"></div>
+  <button class="btn primary block" type="button" data-go="padaria">Calcular minha economia <span data-i="arrow"></span></button>
+  <div class="privacy" role="note"><span class="pi" data-i="lock"></span><div><b>Seus números ficam com você</b><p>Ficam salvos só neste aparelho e servem apenas para os cálculos. Só chegam à VEM se você decidir enviar pelo WhatsApp.</p></div></div>
+
+  <div class="eyebrow"><span data-i="clock"></span>Em 3 minutos, 4 passos</div>
+  <div class="steps">
+    <button class="step-btn" type="button" data-go="padaria"><span class="ico a" data-i="store"></span><span><b>1 · Sua padaria</b><small>Forno, fornadas e o custo do alumínio hoje</small></span><span data-i="chev"></span></button>
+    <button class="step-btn" type="button" data-go="economia"><span class="ico o" data-i="coin"></span><span><b>2 · Economia</b><small>Alumínio × silicone, em R$ por ano</small></span><span data-i="chev"></span></button>
+    <button class="step-btn" type="button" data-go="assadeira"><span class="ico a" data-i="grid"></span><span><b>3 · Assadeira certa</b><small>Modelo Silpró, quantidade e pães por fornada</small></span><span data-i="chev"></span></button>
+    <button class="step-btn" type="button" data-go="plano"><span class="ico o" data-i="cal"></span><span><b>4 · Plano</b><small>Data de renovação, cuidados e orçamento</small></span><span data-i="chev"></span></button>
+  </div>
+</section>
+
+<section class="screen" id="s-padaria" hidden>
+  <div><div class="eyebrow">Passo 1 · Sua padaria</div><h2>Como é a sua produção de pão francês?</h2></div>
+  <div class="card">
+    <div class="q"><b>Quantas lojas você tem?</b>
+      <div class="seg" role="group" aria-label="Porte">
+        <button type="button" data-perfil="ind">1 a 4 lojas</button>
+        <button type="button" data-perfil="rede">Rede · 5 ou mais</button>
+      </div>
+    </div>
+    <label class="f" id="lojasWrap">Número de lojas da rede<input type="number" id="i-lojas" min="5" step="1"></label>
+  </div>
+  <div class="card">
+    <div class="card-h"><span data-i="oven"></span>Produção <span class="hint" id="porLoja1" style="font-weight:400"></span></div>
+    <div class="g2">
+      <label class="f">Pães franceses por dia<input type="number" id="i-paesDia" min="0" step="50"></label>
+      <label class="f">Dias de produção/mês<input type="number" id="i-dias" min="1" max="31" step="1"></label>
+      <label class="f">Preço do pão francês, R$/kg<input type="number" id="i-precoKg" min="0" step="0.1"></label>
+      <label class="f">Peso do pão assado, g<input type="number" id="i-peso" min="10" step="1"></label>
+    </div>
+    <p class="hint">Referências: um padeiro produz de 100 a 120 kg de pão francês por dia, perto de 1.500 pães (Sebrae e Abip). O preço médio nacional do quilo foi R$ 21,54 em 2025 (Instituto Ideal).</p>
+  </div>
+  <div class="card">
+    <div class="card-h"><span data-i="coin"></span>Hoje, com assadeira de alumínio <span class="hint" id="porLoja2" style="font-weight:400"></span></div>
+    <div class="g2">
+      <label class="f">Pães perdidos por grudar, deformar ou queimar a base, %<input type="number" id="i-perdaAl" min="0" max="30" step="0.5"></label>
+      <label class="f">Assadeiras em uso na padaria<input type="number" id="i-emUso" min="1" step="1"></label>
+      <label class="f">Desmoldante ou gordura por assadeira, R$<input type="number" id="i-custoUso" min="0" step="0.05"></label>
+      <label class="f">Troca de alumínio por ano, R$<input type="number" id="i-reposAl" min="0" step="50"></label>
+      <label class="f">Untar e limpar 1 assadeira, segundos<input type="number" id="i-tempoAl" min="0" step="5"></label>
+      <label class="f">Custo da hora do auxiliar, R$<input type="number" id="i-hora" min="0" step="0.1"></label>
+    </div>
+    <p class="hint">Perdas totais em padarias vão de 5,85% a 20,27% do que é produzido (estudo citado pela UTFPR, 2023). Aqui entra só a parte causada pela assadeira. Hora do auxiliar: salário médio de R$ 2.040 em SP (Novo Caged, out/2026) com encargos estimados em 70%, em 186 horas por mês.</p>
+    <span class="ex">Valores de exemplo · troque pelos seus</span>
+  </div>
+  <div class="g3" id="padTiles"></div>
+  <button class="btn primary block" type="button" data-go="economia">Ver minha economia <span data-i="arrow"></span></button>
+</section>
+
+<section class="screen" id="s-economia" hidden>
+  <div><div class="eyebrow">Passo 2 · Economia</div><h2>Alumínio ou silicone: <em>quanto fica por ano?</em></h2></div>
+  <div class="total" id="total"></div>
+
+  <div class="card">
+    <div class="card-h"><span data-i="coin"></span>Quanto custa cada uso de assadeira</div>
+    <p class="hint">Um uso = uma assadeira em uma fornada. É a base de toda a conta.</p>
+    <div class="peruse" id="perUse"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><span data-i="calc"></span>Como chegamos a este número</div>
+    <ol class="memo" id="memo"></ol>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><span data-i="bars"></span>E se a perda com alumínio for outra?</div>
+    <p class="hint">O pão que gruda, deforma ou queima a base é o maior custo escondido. Compare os cenários e use o número que você mede na sua padaria.</p>
+    <div class="tbl-wrap"><table class="sens" id="sens"></table></div>
+    <div class="be" id="breakEven"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><span data-i="sliders"></span>Premissas da assadeira Silpró</div>
+    <div class="g2">
+      <label class="f">Preço por assadeira, R$<input type="number" id="i-preco" min="0" step="1"></label>
+      <label class="f">Vida útil, ciclos<input type="number" id="i-vida" min="100" step="100"></label>
+      <label class="f">Limpar 1 assadeira de silicone, segundos<input type="number" id="i-tempoSil" min="0" step="5"></label>
+      <label class="f">Pães perdidos com silicone, %<input type="number" id="i-perdaSi" min="0" max="30" step="0.5"></label>
+    </div>
+    <ul class="prem" id="prem"></ul>
+  </div>
+  <div class="card">
+    <div class="card-h"><span data-i="book"></span>De onde vêm as referências</div>
+    <ul class="src">
+      <li><a href="https://gironews.com/food-service/pao-frances-pesquisa-revela-que-o-padrao-de-qualidade-do-produto-atinge-44-no-brasil/" target="_blank" rel="noopener">Instituto Ideal · Indicadores da Panificação 2025</a><span>Preço médio de R$ 21,54/kg; pão francês é 9,09% do faturamento; só 44,58% das padarias mantêm o padrão de qualidade.</span></li>
+      <li><a href="https://bibliotecas.sebrae.com.br/chronus/ARQUIVOS_CHRONUS/bds/bds.nsf/4C9FE331FB9D9A73832576AC00662E6A/$File/NT0004307E.pdf" target="_blank" rel="noopener">Sebrae, Abip e ITPC · Encarte técnico do Pão do Dia</a><span>Pão de 70 g de massa e cerca de 55 g assado; 100 a 120 kg por padeiro ao dia; cerca de 20 fornadas por dia.</span></li>
+      <li><a href="https://riut.utfpr.edu.br/jspui/bitstream/1/33759/1/reaproveitamentoperdasfabrilpao.pdf" target="_blank" rel="noopener">UTFPR · Reaproveitamento de perdas no processo fabril de pão (2023)</a><span>Perdas de 5,85% a 20,27% da produção em padarias estudadas.</span></li>
+      <li><a href="https://www.salario.com.br/profissao/auxiliar-de-padeiro-cbo-513505/sp/" target="_blank" rel="noopener">Novo Caged via Salário.com.br · Auxiliar de padeiro, SP (out/2026)</a><span>Salário médio de R$ 2.040 para 43 horas por semana.</span></li>
+      <li><a href="https://agenciasebrae.com.br/economia-e-politica/a-cada-minuto-seis-novas-padarias-sao-abertas-no-pais/" target="_blank" rel="noopener">Agência Sebrae · Convênio Sebrae e Abip (2025)</a><span>Metas do setor: +30% de qualidade do pão francês e +7% de produtividade.</span></li>
+    </ul>
+  </div>
+  <button class="btn primary block" type="button" data-go="assadeira">Ver a assadeira certa <span data-i="arrow"></span></button>
+</section>
+
+<section class="screen" id="s-assadeira" hidden>
+  <div><div class="eyebrow">Passo 3 · Assadeira certa</div><h2>Qual Silpró e <em>quantos pães</em> por fornada</h2></div>
+  <div class="card">
+    <div class="card-h"><span data-i="grid"></span>Modelo da linha Silpró</div>
+    <div class="chips" id="fmtChips"></div>
+    <p class="hint">Medidas da linha Silpró Pró Chef na loja Mundo VEM, em vermelho ou preto.</p>
+  </div>
+  <div class="card">
+    <div class="card-h"><span data-i="bread"></span>O que você mais assa?</div>
+    <div class="chips" id="paoChips"></div>
+  </div>
+  <div class="card">
+    <div class="card-h"><span data-i="grid"></span><span id="matTitle"></span></div>
+    <div class="mat" id="mat"></div>
+    <div class="g3" id="matTiles"></div>
+    <p class="hint">Estimativa com espaço para o pão crescer na canaleta. Ajuste com o seu padeiro.</p>
+  </div>
+  <div class="card">
+    <div class="card-h"><span data-i="box"></span>Kit recomendado</div>
+    <div class="g3" id="kitTiles"></div>
+    <label class="f">Assadeiras de reserva por loja, além das que você já usa hoje<input type="number" id="i-reserva" min="0" step="1"></label>
+  </div>
+  <button class="btn primary block" type="button" data-go="plano">Ver meu plano <span data-i="arrow"></span></button>
+</section>
+
+<section class="screen" id="s-plano" hidden>
+  <div><div class="eyebrow">Passo 4 · Plano</div><h2 id="planoH"></h2></div>
+
+  <div class="card">
+    <div class="card-h"><span data-i="cal"></span>Quando renovar</div>
+    <label class="f">Data da compra (ou de hoje, para simular)<input type="date" id="i-compra"></label>
+    <div class="life" id="life"></div>
+    <div class="life-legend" id="lifeLegend"></div>
+    <div class="g2" id="lifeTiles"></div>
+    <p class="hint">Calculado pelas fornadas que você informou. Não precisa registrar uso.</p>
+  </div>
+
+  <div class="pilot" id="pilot" hidden></div>
+
+  <div class="card">
+    <div class="card-h"><span data-i="play"></span>Academia da assadeira</div>
+    <p class="hint">Vídeos de 60 segundos para treinar a equipe. Enquanto ficam prontos, o essencial está aqui.</p>
+    <div class="videos" id="videos"></div>
+  </div>
+
+  <div class="plan" id="plan"></div>
+  <p class="credit">App VEM · desenvolvido por LeanIA Digital · LeanIA Mini Apps v1 · MVP</p>
+</section>
+
+</div></main>
+
+<a class="wa wa-fab" href="https://wa.me/5511953995994" target="_blank" rel="noopener" data-wa="duvida" aria-label="Falar com a VEM no WhatsApp"></a>
+
+<nav class="tabbar" aria-label="Etapas">
+  <div class="wrap">
+    <button type="button" data-go="home"><span data-i="home"></span>Início</button>
+    <button type="button" data-go="padaria"><span data-i="store"></span>Padaria</button>
+    <button type="button" data-go="economia"><span data-i="coin"></span>Economia</button>
+    <button type="button" data-go="assadeira"><span data-i="grid"></span>Assadeira</button>
+    <button type="button" data-go="plano"><span data-i="cal"></span>Plano</button>
+  </div>
+</nav>
+
+<script>
+(function(){
+const $=s=>document.querySelector(s);
+const S=(p,w=22)=>`<svg width="${w}" height="${w}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
+const WA='<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4.1 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>';
+const I={
+ arrow:S('<path d="M5 12h14M13 6l6 6-6 6"/>',18), chev:S('<path d="m9 6 6 6-6 6"/>',18),
+ clock:S('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',16),
+ lock:S('<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',18),
+ home:S('<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>'),
+ store:S('<path d="M3 9l1.5-5h15L21 9"/><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13v8h14v-8M10 21v-5h4v5"/>'),
+ coin:S('<circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .8-3 2s1.3 1.7 3 2 3 .8 3 2-1.3 2-3 2c-1.4 0-2.5-.5-3-1.5M12 6v2M12 16v2"/>'),
+ grid:S('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9.7h18M3 14.3h18"/>'),
+ cal:S('<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/>'),
+ oven:S('<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 8h18"/><rect x="7" y="11" width="10" height="7" rx="1"/><path d="M7 5.5h.01M10 5.5h.01"/>',18),
+ book:S('<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/>',18),
+ calc:S('<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h8"/>',18),
+ bars:S('<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',18),
+ sliders:S('<path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/>',18),
+ bread:S('<path d="M5 11a4 4 0 0 1 1-7.8C8 3 9.5 4 12 4s4-1 6-.8A4 4 0 0 1 19 11v8a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/>',18),
+ box:S('<path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/>',18),
+ play:S('<circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4z"/>',18),
+ check:S('<path d="m5 12 5 5 9-10"/>',16), x:S('<path d="M6 6l12 12M18 6 6 18"/>',16),
+ flask:S('<path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3"/><path d="M7 15h10"/>',20),
+ copy:S('<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>',18),
+ sun:S('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',20),
+ moon:S('<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',20)
+};
+document.querySelectorAll('[data-i]').forEach(el=>{el.innerHTML=I[el.dataset.i]||''});
+$('.wa-fab').innerHTML=WA;
+
+/* ===== Configuração (trocar aqui) ===== */
+const WA_NUM='5511953995994';           // WhatsApp temporário da VEM
+const WA_SHOW='(11) 95399-5994';
+
+const BRL=v=>(isFinite(v)?v:0).toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+const BRL2=v=>(isFinite(v)?v:0).toLocaleString('pt-BR',{style:'currency',currency:'BRL',minimumFractionDigits:2,maximumFractionDigits:2});
+const INT=v=>Math.round(isFinite(v)?v:0).toLocaleString('pt-BR');
+const N=v=>{const n=parseFloat(String(v).replace(',','.'));return isFinite(n)?n:0};
+const DATE=d=>d.toLocaleDateString('pt-BR');
+const isoToday=()=>{const d=new Date();return new Date(d.getTime()-d.getTimezoneOffset()*6e4).toISOString().slice(0,10)};
+
+/* Linha Silpró Pró Chef (medidas da loja Mundo VEM). W = largura, L = comprimento da canaleta, c = canaletas */
+const FMTS={
+ f405:{n:'40 × 60 · 5 canaletas',W:40,L:60,c:5,tip:'Pão francês'},
+ f404:{n:'40 × 60 · 4 canaletas',W:40,L:60,c:4,tip:'Pão francês'},
+ f403:{n:'40 × 60 · 3 canaletas',W:40,L:60,c:3,tip:'Semolina'},
+ f504:{n:'50 × 72 · 4 canaletas',W:50,L:72,c:4,tip:'Semolina'},
+ f586:{n:'58 × 70 · 6 canaletas',W:58,L:70,c:6,tip:'Pão francês'}
+};
+/* len = comprimento ocupado na canaleta, com folga para crescer (estimativa) */
+const PAES={
+ fr50:{n:'Pão francês 70 g de massa',len:14},
+ fr70:{n:'Pão francês 100 g de massa',len:17},
+ semol:{n:'Semolina e bengala',len:24}
+};
+
+const KEY='vem-fornada-certa-v3';
+let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){}
+const DEF={perfil:'ind',lojas:8,paesDia:1500,dias:26,precoKg:21.54,peso:55,perdaAl:2,perdaSi:0.5,emUso:16,custoUso:0.15,reposAl:960,tempoAl:40,hora:18.6,preco:398,vida:2000,tempoSil:10,reserva:2,fmt:'f405',pao:'fr50',compra:isoToday(),papel:'dono'};
+const st=Object.assign({},DEF,saved.d||{});
+if(!FMTS[st.fmt])st.fmt=DEF.fmt; if(!PAES[st.pao])st.pao=DEF.pao;
+st.tab='home';
+const save=()=>{try{const d={};Object.keys(DEF).forEach(k=>d[k]=st[k]);localStorage.setItem(KEY,JSON.stringify({d}))}catch(e){}};
+
+/* Origem e perfil vindos do link: ?perfil=rede&v=codigo (domínio próprio) ou #rede */
+let origem='';
+try{const q=new URLSearchParams(location.search);if(q.get('perfil')==='rede')st.perfil='rede';origem=q.get('v')||q.get('utm_source')||''}catch(e){}
+const hash=(location.hash||'').slice(1);
+if(hash==='rede')st.perfil='rede';
+
+/* ===== Cálculos ===== */
+function econ(o){
+ o=o||{};
+ const rede=st.perfil==='rede',lojas=rede?Math.max(1,Math.round(N(st.lojas))):1;
+ const L=layout(),porAss=Math.max(1,L.n);
+ const paesDia=Math.max(0,N(st.paesDia)),dias=N(st.dias),precoKg=N(st.precoKg),peso=N(st.peso);
+ const perdaAl=Math.max(0,o.perdaAl!=null?o.perdaAl:N(st.perdaAl)),perdaSi=Math.min(perdaAl,Math.max(0,N(st.perdaSi)));
+ const desm=N(st.custoUso),preco=N(st.preco),vida=Math.max(1,o.vida||N(st.vida));
+ const emUso=Math.max(1,Math.round(N(st.emUso))),res=Math.max(0,Math.round(N(st.reserva)));
+ const tAl=Math.max(0,N(st.tempoAl)),tSi=Math.max(0,N(st.tempoSil)),hora=N(st.hora),repos=Math.max(0,N(st.reposAl));
+ const paesAno=paesDia*dias*12, valorPao=peso/1000*precoKg;
+ const usosDia=paesDia/porAss, usosMes=usosDia*dias, usosAno=usosMes*12;
+ const kit=emUso+res;
+ // Alumínio, por ano (por loja)
+ const perdidosAl=paesAno*perdaAl/100, perdaAlAno=perdidosAl*valorPao;
+ const desmAno=desm*usosAno, horasAl=tAl/3600*usosAno, maoAlAno=horasAl*hora;
+ const alAno=perdaAlAno+desmAno+repos+maoAlAno;
+ // Silicone, por ano (por loja)
+ const perdidosSi=paesAno*perdaSi/100, perdaSiAno=perdidosSi*valorPao;
+ const desgUso=preco/vida, desgAno=desgUso*usosAno, horasSi=tSi/3600*usosAno, maoSiAno=horasSi*hora;
+ const siAno=perdaSiAno+desgAno+maoSiAno;
+ const ecoAno=alAno-siAno;
+ const invest=preco*kit;
+ const caixaMes=(alAno-perdaSiAno-maoSiAno)/12;            // o que deixa de sair do caixa por mês
+ const payback=caixaMes>0?invest/caixaMes:Infinity;
+ const u=usosAno||1;
+ const pu={perda:perdaAlAno/u,desm:desm,repos:repos/u,maoAl:maoAlAno/u,perdaSi:perdaSiAno/u,desg:desgUso,maoSi:maoSiAno/u};
+ pu.al=pu.perda+pu.desm+pu.repos+pu.maoAl; pu.si=pu.perdaSi+pu.desg+pu.maoSi;
+ const vidaMin=(pu.al-pu.perdaSi-pu.maoSi)>0?preco/(pu.al-pu.perdaSi-pu.maoSi):Infinity;
+ const ciclosAss=kit>0?usosMes/kit:0, vidaMeses=ciclosAss>0?vida/ciclosAss:Infinity;
+ const fatPaoMes=paesDia*dias*valorPao;
+ return{rede,lojas,porAss,paesDia,dias,precoKg,peso,valorPao,perdaAl,perdaSi,paesAno,perdidosAl,perdidosSi,perdaAlAno,perdaSiAno,
+  desm,preco,vida,emUso,res,tAl,tSi,hora,repos,usosDia,usosMes,usosAno,kit,desmAno,horasAl,maoAlAno,alAno,desgUso,desgAno,horasSi,maoSiAno,siAno,
+  ecoAno,invest,caixaMes,payback,pu,vidaMin,ciclosAss,vidaMeses,fatPaoMes,
+  horasAno:horasAl-horasSi,ecoRede:ecoAno*lojas,investRede:invest*lojas,kitRede:kit*lojas,atualAno:alAno};
+}
+const calc=()=>econ();
+function layout(){
+ const f=FMTS[st.fmt]||FMTS.f405,p=PAES[st.pao]||PAES.fr50;
+ const por=Math.max(0,Math.floor((f.L-2)/p.len));
+ return{f,p,por,n:por*f.c};
+}
+const fmtMeses=m=>!isFinite(m)?'—':m<1?'menos de 1 mês':Math.round(m)+(Math.round(m)===1?' mês':' meses');
+
+/* ===== Tema: sempre abre no claro ===== */
+const root=document.documentElement;
+root.removeAttribute('data-vem-theme');
+const eff=()=>root.getAttribute('data-vem-theme')==='dark'?'dark':'light';
+const syncTheme=()=>{$('#themeBtn').innerHTML=eff()==='dark'?I.sun:I.moon};
+$('#themeBtn').addEventListener('click',()=>{root.setAttribute('data-vem-theme',eff()==='dark'?'light':'dark');syncTheme()});
+syncTheme();
+
+/* ===== Navegação ===== */
+const TABS=['home','padaria','economia','assadeira','plano'];
+function go(t){
+ st.tab=t;TABS.forEach(k=>{$('#s-'+k).hidden=k!==t});
+ document.querySelectorAll('.tabbar button').forEach(b=>b.setAttribute('aria-current',b.dataset.go===t?'page':'false'));
+ render();window.scrollTo({top:0});
+}
+document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g)go(g.dataset.go)});
+
+/* ===== Entradas ===== */
+const FIELDS=['lojas','paesDia','dias','precoKg','peso','perdaAl','perdaSi','emUso','custoUso','reposAl','tempoAl','hora','preco','vida','tempoSil','reserva','compra'];
+FIELDS.forEach(k=>{const el=$('#i-'+k);if(!el)return;el.value=st[k];el.addEventListener('input',()=>{st[k]=el.value;save();render()})});
+document.querySelectorAll('[data-perfil]').forEach(b=>b.addEventListener('click',()=>{st.perfil=b.dataset.perfil;save();render()}));
+$('#fmtChips').innerHTML=Object.entries(FMTS).map(([k,f])=>`<button class="chip" type="button" data-fmt="${k}">${f.n}</button>`).join('');
+$('#fmtChips').addEventListener('click',e=>{const b=e.target.closest('[data-fmt]');if(!b)return;st.fmt=b.dataset.fmt;save();render()});
+$('#paoChips').innerHTML=Object.entries(PAES).map(([k,p])=>`<button class="chip" type="button" data-pao="${k}">${p.n}</button>`).join('');
+$('#paoChips').addEventListener('click',e=>{const b=e.target.closest('[data-pao]');if(!b)return;st.pao=b.dataset.pao;save();render()});
+
+/* ===== Desenho da assadeira (vista de cima) ===== */
+function trayTop(L){
+ const sc=10,vw=L.f.L*sc,vh=L.f.W*sc,pad=18,ch=(vh-pad*2)/L.f.c;
+ let g='';
+ for(let i=0;i<L.f.c;i++){
+  const y=pad+i*ch;
+  g+=`<rect x="${pad}" y="${y+4}" width="${vw-pad*2}" height="${ch-8}" rx="${(ch-8)/2}" style="fill:url(#g-canal)"/>`;
+  const step=(vw-pad*2)/Math.max(L.por,1),bw=Math.min(L.p.len*sc-16,step-10),bh=Math.min(ch-14,bw*.5);
+  for(let k=0;k<L.por;k++){const cx=pad+step*(k+.5),cy=y+ch/2;
+   g+=`<use href="#sy-bread" x="${cx-bw/2}" y="${cy-bh/2}" width="${bw}" height="${bh}"/>`}
+ }
+ return `<svg viewBox="-12 -12 ${vw+24} ${vh+24}" role="img" aria-label="${L.n} unidades de ${L.p.n} em uma assadeira Silpró ${L.f.n}"><rect x="0" y="6" width="${vw}" height="${vh}" rx="26" style="fill:var(--il-shadow);opacity:.18"/><rect x="0" y="0" width="${vw}" height="${vh}" rx="26" style="fill:url(#g-rim)"/><rect x="0" y="0" width="${vw}" height="${vh}" rx="26" style="fill:url(#p-mesh);opacity:.25"/>${g}</svg>`;
+}
+
+/* ===== Render ===== */
+function render(){
+ const c=calc(),L=layout(),rede=c.rede,sfx=rede?' por loja':'';
+ document.querySelectorAll('[data-perfil]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.perfil===st.perfil)));
+ $('#lojasWrap').hidden=!rede;
+ $('#porLoja1').textContent=rede?'(por loja)':'';
+ $('#porLoja2').textContent=rede?'(por loja)':'';
+
+ // Início
+ $('#teaser').innerHTML=`<div><small>${rede?'Economia simulada da rede por ano':'Economia simulada por ano'}</small><b>${BRL(rede?c.ecoRede:c.ecoAno)}</b><p class="teaser-base">Para ${rede?`${INT(c.lojas)} lojas, cada uma com `:''}${INT(c.paesDia)} pães franceses por dia (${INT(c.paesDia*c.peso/1000)} kg), ${N(st.dias)} dias por mês e ${INT(c.emUso)} assadeiras em uso. Ajuste com os seus números no passo 1.</p></div><span class="ex">Simulação</span>`;
+
+ // Padaria
+ $('#padTiles').innerHTML=`<div class="tile"><span>Produção/dia${sfx}</span><b>${INT(c.paesDia*c.peso/1000)} kg</b></div><div class="tile a"><span>Pão francês/mês${sfx}</span><b>${BRL(c.fatPaoMes)}</b></div><div class="tile o"><span>Pães perdidos/dia${sfx}</span><b>${INT(c.paesDia*c.perdaAl/100)}</b></div>`;
+
+ // Economia
+ const k=c.lojas;
+ $('#total').innerHTML=rede
+  ?`<span>Economia estimada da rede por ano (${INT(k)} lojas)</span><b>${BRL(c.ecoRede)}</b><small>${BRL(c.ecoAno)} por loja, ${BRL(c.ecoRede/12)} por mês na rede. O kit da rede (${BRL(c.investRede)}) volta em ${fmtMeses(c.payback)}.</small>`
+  :`<span>Economia estimada por ano</span><b>${BRL(c.ecoAno)}</b><small>${BRL(c.ecoAno/12)} por mês. O kit de ${BRL(c.invest)} volta em ${fmtMeses(c.payback)}; depois disso, a economia fica no caixa.</small>`;
+ const p=c.pu,mxu=Math.max(p.al,p.si,0.01);
+ const seg=(v,col)=>`<i style="width:${v/mxu*100}%;background:${col}"></i>`;
+ $('#perUse').innerHTML=`
+ <div class="pu al"><div class="pu-h"><b>Alumínio hoje</b><strong>${BRL2(p.al)}</strong></div>
+  <span class="stack">${seg(p.perda,'var(--bad)')}${seg(p.desm,'var(--accent2)')}${seg(p.repos,'var(--warn)')}${seg(p.maoAl,'var(--muted)')}</span>
+  <span class="pu-l"><span><u style="background:var(--bad)"></u>Pães perdidos ${BRL2(p.perda)}</span><span><u style="background:var(--accent2)"></u>Desmoldante ${BRL2(p.desm)}</span><span><u style="background:var(--warn)"></u>Troca do alumínio ${BRL2(p.repos)}</span><span><u style="background:var(--muted)"></u>Untar e limpar ${BRL2(p.maoAl)}</span></span></div>
+ <div class="pu si"><div class="pu-h"><b>Silicone Silpró</b><strong>${BRL2(p.si)}</strong></div>
+  <span class="stack">${seg(p.perdaSi,'var(--bad)')}${seg(p.desg,'var(--good)')}${seg(p.maoSi,'var(--muted)')}</span>
+  <span class="pu-l"><span><u style="background:var(--bad)"></u>Pães perdidos ${BRL2(p.perdaSi)}</span><span><u style="background:var(--good)"></u>Desgaste da assadeira ${BRL2(p.desg)}</span><span><u style="background:var(--muted)"></u>Limpar ${BRL2(p.maoSi)}</span></span></div>
+ <div class="pu-diff">${p.al>p.si?`Cada uso fica <b>${BRL2(p.al-p.si)} mais barato</b> com silicone. São ${INT(c.usosAno)} usos por ano${rede?' em cada loja':''}.`:`Com estes números, o silicone custa <b>${BRL2(p.si-p.al)} a mais</b> por uso.`}</div>`;
+ const L2=(l,v)=>`<div><span>${l}</span><span>${v}</span></div>`;
+ $('#memo').innerHTML=`
+ <li><div><b class="t">Quanto você produz e quantas vezes usa as assadeiras${rede?', por loja':''}</b><div class="calc">
+  ${L2(`${INT(c.paesDia)} pães/dia × ${N(st.dias)} dias × 12 meses`,`${INT(c.paesAno)} pães/ano`)}
+  ${L2(`Cada pão: ${INT(c.peso)} g × ${BRL2(c.precoKg)}/kg`,BRL2(c.valorPao))}
+  <div class="sum"><span>${INT(c.paesDia)} pães ÷ ${INT(c.porAss)} por assadeira × ${N(st.dias)} dias × 12</span><span>${INT(c.usosAno)} usos/ano</span></div></div></div></li>
+ <li><div><b class="t">Quanto o alumínio custa hoje, por ano</b><div class="calc">
+  ${L2(`Pães perdidos: ${INT(c.paesAno)} × ${String(c.perdaAl).replace('.',',')}% = ${INT(c.perdidosAl)} pães × ${BRL2(c.valorPao)}`,BRL(c.perdaAlAno))}
+  ${L2(`Desmoldante: ${BRL2(c.desm)} × ${INT(c.usosAno)} usos`,BRL(c.desmAno))}
+  ${L2('Troca de assadeiras amassadas ou oxidadas',BRL(c.repos))}
+  ${L2(`Untar e limpar: ${INT(c.tAl)} s × ${INT(c.usosAno)} usos = ${INT(c.horasAl)} h × ${BRL2(c.hora)}/h`,BRL(c.maoAlAno))}
+  <div class="sum"><span>Total com alumínio</span><span>${BRL(c.alAno)}</span></div></div><small>O pão perdido é contado pelo preço de venda, porque é pão que deixa de ir para a vitrine.</small></div></li>
+ <li><div><b class="t">Quanto o silicone custa, por ano</b><div class="calc">
+  ${L2(`Pães perdidos: ${INT(c.paesAno)} × ${String(c.perdaSi).replace('.',',')}% = ${INT(c.perdidosSi)} pães × ${BRL2(c.valorPao)}`,BRL(c.perdaSiAno))}
+  ${L2(`Desgaste: ${BRL(c.preco)} ÷ ${INT(c.vida)} ciclos = ${BRL2(c.desgUso)} × ${INT(c.usosAno)} usos`,BRL(c.desgAno))}
+  ${L2(`Limpar: ${INT(c.tSi)} s × ${INT(c.usosAno)} usos = ${INT(c.horasSi)} h × ${BRL2(c.hora)}/h`,BRL(c.maoSiAno))}
+  ${L2('Desmoldante e troca de alumínio','R$ 0')}
+  <div class="sum"><span>Total com silicone</span><span>${BRL(c.siAno)}</span></div></div><small>O desgaste distribui o preço da assadeira pelos usos que ela aguenta.</small></div></li>
+ <li><div><b class="t">Economia por ano</b><div class="calc">${L2('Alumínio − silicone',`${BRL(c.alAno)} − ${BRL(c.siAno)}`)}<div class="sum"><span>Economia${rede?' por loja':''}</span><span>${BRL(c.ecoAno)}</span></div>${rede?`<div class="sum"><span>× ${INT(k)} lojas</span><span>${BRL(c.ecoRede)}</span></div>`:''}</div><small>São ${INT(c.perdidosAl-c.perdidosSi)} pães a mais na vitrine e ${INT(c.horasAno)} horas de trabalho liberadas por ano${rede?' em cada loja':''}.</small></div></li>
+ <li><div><b class="t">Em quanto tempo o kit se paga</b><div class="calc">${L2(`Kit: ${INT(c.kit)} assadeiras × ${BRL(c.preco)}`,BRL(c.invest))}${L2('Deixa de sair do caixa por mês',BRL(c.caixaMes))}<div class="sum"><span>${BRL(c.invest)} ÷ ${BRL(c.caixaMes)}</span><span>${fmtMeses(c.payback)}</span></div></div><small>O desgaste não entra aqui, porque ele já é o próprio preço do kit.</small></div></li>`;
+ const cen=[0.5,1,2,3,5],cur=N(st.perdaAl);
+ if(!cen.includes(cur))cen.push(cur);cen.sort((x,y)=>x-y);
+ $('#sens').innerHTML=`<thead><tr><th>Perda</th><th>Pães/dia</th><th>Economia/ano${rede?' (rede)':''}</th><th>Retorno</th></tr></thead><tbody>${cen.map(v=>{const e=econ({perdaAl:v}),eco=e.ecoAno*k;return`<tr class="${v===cur?'cur':''}"><td>${String(v).replace('.',',')}%${v===cur?' ●':''}</td><td>${INT(e.paesDia*v/100)}</td><td class="${eco<0?'neg':'pos'}">${BRL(eco)}</td><td>${fmtMeses(e.payback)}</td></tr>`}).join('')}</tbody>`;
+ $('#breakEven').innerHTML=isFinite(c.vidaMin)?`Com estes números, a assadeira de silicone <b>se paga se durar mais de ${INT(Math.ceil(c.vidaMin/10)*10)} ciclos</b>, cerca de ${fmtMeses(c.vidaMin/Math.max(c.ciclosAss,1))} de uso. A referência de mercado é 2.000 ciclos.`:'Com estes números, o silicone não se paga. Revise a perda, o tempo de limpeza ou a troca de alumínio.';
+ const P=[['Perda com alumínio',String(c.perdaAl).replace('.',',')+'%','exm','Exemplo · medir no piloto'],['Perda com silicone',String(c.perdaSi).replace('.',',')+'%','exm','Exemplo · medir no piloto'],['Preço por assadeira',BRL(c.preco),'exm','Exemplo · loja Mundo VEM'],['Vida útil',INT(c.vida)+' ciclos','ref','Referência · confirmar na ficha VEM'],['Preço do kg e peso do pão',`${BRL2(c.precoKg)} · ${INT(c.peso)} g`,'ref','Referência · Ideal e Sebrae'],['Hora do auxiliar',BRL2(c.hora),'ref','Referência · Novo Caged']];
+ $('#prem').innerHTML=P.map(([l,v,t,tl])=>`<li><span>${l}: <b>${v}</b></span><span class="tag ${t}">${tl}</span></li>`).join('');
+
+ // Assadeira
+ document.querySelectorAll('[data-fmt]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.fmt===st.fmt)));
+ document.querySelectorAll('[data-pao]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.pao===st.pao)));
+ $('#matTitle').textContent=`Silpró ${L.f.n} · ${L.p.n.toLowerCase()}`;
+ $('#mat').innerHTML=trayTop(L);
+ $('#matTiles').innerHTML=`<div class="tile a"><span>Por assadeira</span><b>${INT(L.n)} un.</b></div><div class="tile"><span>Usos de assadeira/dia${sfx}</span><b>${INT(c.usosDia)}</b></div><div class="tile"><span>Pães/dia${sfx}</span><b>${INT(c.paesDia)}</b></div>`;
+ $('#kitTiles').innerHTML=`<div class="tile a"><span>Modelo</span><b>${L.f.W} × ${L.f.L}</b></div><div class="tile o"><span>Assadeiras${sfx}</span><b>${INT(c.kit)}</b></div><div class="tile"><span>${rede?'Total da rede':'Investimento'}</span><b>${rede?INT(c.kitRede)+' un.':BRL(c.invest)}</b></div>`;
+
+ if(st.tab==='plano')renderPlano(c,L);
+}
+
+function renderPlano(c,L){
+ const rede=c.rede;
+ $('#planoH').innerHTML=rede?'Da loja-piloto <em>para a rede</em>':'Do cálculo <em>para o forno</em>';
+ const ini=new Date((st.compra||isoToday())+'T12:00:00'),ok=!isNaN(ini)&&isFinite(c.vidaMeses);
+ if(ok){
+  const dias=c.vidaMeses*30.44,fim=new Date(ini.getTime()+dias*864e5),alerta=new Date(ini.getTime()+dias*.8*864e5);
+  const pct=Math.min(100,Math.max(0,(Date.now()-ini.getTime())/(dias*864e5)*100));
+  $('#life').innerHTML=`<i style="width:${pct}%"></i><u style="left:calc(80% - 1px)"></u><em style="left:80%">Alerta 80%</em>`;
+  $('#lifeLegend').innerHTML=`<span>${DATE(ini)}</span><span>${Math.round(pct)}% usado hoje</span><span>${DATE(fim)}</span>`;
+  $('#lifeTiles').innerHTML=`<div class="tile o"><span>Programar a renovação em</span><b>${DATE(alerta)}</b></div><div class="tile"><span>Vida útil estimada</span><b>${fmtMeses(c.vidaMeses)}</b></div>`;
+ }else{$('#life').innerHTML='';$('#lifeLegend').innerHTML='';$('#lifeTiles').innerHTML='<p class="hint">Informe a data e as fornadas para estimar.</p>'}
+
+ const pil=$('#pilot');pil.hidden=!rede;
+ if(rede){pil.innerHTML=`<div class="ph"><span>${I.flask}</span><div><b>Piloto de 30 dias em 1 loja</b><small>Prova com os números da sua rede antes de padronizar</small></div></div><ol><li>Escolha 1 loja e troque as assadeiras de alumínio do pão de maior giro.</li><li>Durante 30 dias, anote: gasto com desmoldante, pães perdidos por grudar e tempo de limpeza por assadeira.</li><li>Compare com as 4 semanas anteriores e leve o resultado à diretoria.</li><li>Com o resultado, padronize o kit nas ${INT(c.lojas)} lojas.</li></ol><div class="q"><span style="font-size:12px;color:var(--muted)">Quem está avaliando?</span><div class="seg" role="group" aria-label="Seu papel">${[['dono','Dono'],['compras','Compras'],['padeiro','Padeiro'],['qualidade','Qualidade']].map(([k,l])=>`<button type="button" data-papel="${k}" aria-pressed="${st.papel===k}">${l}</button>`).join('')}</div></div>`}
+
+ const V=[
+  ['Primeiro uso','Lave com água morna e detergente neutro e seque bem.','Não precisa untar nem usar desmoldante.','check'],
+  ['Na fornada','Nunca use em chama direta nem encostada na resistência.','Não corte o pão nem use faca ou espátula de metal na canaleta.','x'],
+  ['Limpeza e guarda','Esponja macia e água morna. Nada de palha de aço.','Guarde sem dobrar. Temperatura máxima: confira na ficha da VEM.','check']
+ ];
+ $('#videos').innerHTML=V.map(([t,a,b,ic])=>`<div class="vcard"><div class="vframe"><div class="soon"><span>${I.play}</span>Vídeo em produção</div><span class="cc">CC</span><span class="dur">60 s</span></div><b>${t}</b><ul class="ticks${ic==='x'?' no':''}"><li>${ic==='x'?I.x:I.check}<span>${a}</span></li><li>${ic==='x'?I.x:I.check}<span>${b}</span></li></ul></div>`).join('');
+
+ const eco=rede?c.ecoRede:c.ecoAno;
+ $('#plan').innerHTML=`<div class="eyebrow">Plano Fornada Certa</div><div class="ttl">${rede?'Sua rede em uma tela':'Sua padaria em uma tela'}</div>
+ <dl><div><dt>Economia por ano</dt><dd style="color:var(--good)">${BRL(eco)}</dd></div><div><dt>Retorno em</dt><dd>${fmtMeses(c.payback)}</dd></div><div><dt>Kit${rede?' por loja':''}</dt><dd>${INT(c.kit)} × Silpró ${L.f.L} × ${L.f.W}</dd></div><div><dt>${rede?'Lojas':'Renovar em'}</dt><dd>${rede?INT(c.lojas):fmtMeses(c.vidaMeses*.8)}</dd></div></dl>
+ <div class="cta">${rede
+  ?`<p>Quer provar o resultado em uma loja antes de decidir pela rede? A VEM monta o piloto com você.</p><div class="row"><a class="wa" href="https://wa.me/${WA_NUM}" target="_blank" rel="noopener" data-wa="piloto">${WA}Propor piloto em 1 loja</a><button class="btn" type="button" id="copyRes">${I.copy}Copiar resumo para a diretoria</button></div>`
+  :`<p>Gostou do resultado? Peça o orçamento do seu kit ou uma amostra para testar no seu forno.</p><div class="row"><a class="wa" href="https://wa.me/${WA_NUM}" target="_blank" rel="noopener" data-wa="orcamento">${WA}Pedir orçamento</a><a class="btn" href="https://wa.me/${WA_NUM}" target="_blank" rel="noopener" data-wa="amostra">Quero uma amostra</a></div>`}
+ <div class="privacy sm" role="note">${I.lock}<p style="margin:0;font-size:12px">O envio é opcional. Você vê a mensagem antes de enviar, e ela traz só o resumo acima.</p></div>
+ <span class="hint">Ou fale direto: <span class="contact">WhatsApp ${WA_SHOW}</span></span></div>`;
+}
+
+$('#pilot').addEventListener('click',e=>{const b=e.target.closest('[data-papel]');if(!b)return;st.papel=b.dataset.papel;save();render()});
+
+/* ===== Mensagens ===== */
+const PAPEL={dono:'Dono/diretor',compras:'Compras',padeiro:'Padeiro-chefe',qualidade:'Qualidade'};
+function resumo(intent){
+ const c=calc(),L=layout(),rede=c.rede;
+ const head={orcamento:'Quero um orçamento de assadeiras de silicone Silpró.',amostra:'Quero uma amostra da assadeira Silpró para testar no meu forno.',piloto:'Quero propor um piloto de 30 dias em uma loja da nossa rede.',duvida:'Tenho uma dúvida sobre as assadeiras de silicone Silpró.',diretoria:'Resumo para a diretoria · Assadeiras de silicone Silpró (VEM)'}[intent]||'';
+ const linhas=[
+  rede?`• Rede com ${INT(c.lojas)} lojas${st.papel?` · quem avalia: ${PAPEL[st.papel]}`:''}`:'• Padaria independente',
+  `• Hoje: ${INT(c.paesDia)} pães franceses/dia, ${N(st.dias)} dias/mês, ${INT(c.emUso)} assadeiras de alumínio, perda de ${String(c.perdaAl).replace('.',',')}%`,
+  `• Modelo sugerido: Silpró ${L.f.n} · ${L.p.n} (${INT(L.n)} por assadeira)`,
+  `• Kit: ${INT(c.kit)} assadeiras${rede?` por loja (${INT(c.kitRede)} na rede)`:''}`,
+  `• Economia estimada: ${BRL(rede?c.ecoRede:c.ecoAno)}/ano${rede?` (${BRL(c.ecoAno)} por loja)`:''}`,
+  `• Retorno estimado: ${fmtMeses(c.payback)}`
+ ];
+ if(origem)linhas.push(`• Origem: ${origem}`);
+ return (intent==='diretoria'?head+'\n\n':`Olá, VEM! Usei o app Fornada Certa. ${head}\n\nMeu cálculo:\n`)+linhas.join('\n')+(intent==='diretoria'?'\n\nPremissas: preço, vida útil, desmoldante, troca de alumínio e tempo de limpeza são estimativas a confirmar com a VEM.':'');
+}
+document.addEventListener('click',e=>{const a=e.target.closest('[data-wa]');if(a)a.href='https://wa.me/'+WA_NUM+'?text='+encodeURIComponent(resumo(a.dataset.wa))},true);
+document.addEventListener('click',e=>{
+ const b=e.target.closest('#copyRes');if(!b)return;const txt=resumo('diretoria');
+ try{navigator.clipboard.writeText(txt).then(()=>{b.innerHTML=I.check+'Resumo copiado'},()=>{b.textContent='Copie pelo WhatsApp'})}catch(err){b.textContent='Copie pelo WhatsApp'}
+});
+
+(function(){const sc=$('.flow-steps'),dots=document.querySelectorAll('.flow-dots i');if(!sc)return;sc.addEventListener('scroll',()=>{const li=sc.querySelector('li');const w=li?li.offsetWidth+14:1;const i=Math.min(2,Math.round(sc.scrollLeft/w));dots.forEach((d,k)=>d.classList.toggle('on',k===i))},{passive:true})})();
+const map={inicio:'home',padaria:'padaria',economia:'economia',assadeira:'assadeira',plano:'plano'};
+go(map[hash]||'home');
+})();
+
+</script>
+
+</body>
+</html>
